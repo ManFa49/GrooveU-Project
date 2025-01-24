@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrooveU - Dance Classes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="scripts.js" defer></script>
+
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="..\Home\index.html">
+                <img src="Screenshot 2024-11-06 073214.png" alt="">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="hideonmobile"><a href="..\Home\index.html" onclick="window.location=this.href; return false;">Home</a></li>
+            <li class="hideonmobile"><a href="..\About\about.html" onclick="window.location=this.href; return false;">About</a></li>
+            <li class="hideonmobile"><a href="..\Services\services.html" onclick="window.location=this.href; return false;">Services</a></li>
+            <li class="hideonmobile"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="sidebar"> <!-- Responsive Menu -->
+            <ul class="nav-links">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
+                    width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-
+                    224-224-224 224Z"/></svg></a>
+                </li>
+                <li><a href="..\Home\index.html" onclick="window.location=this.href; return false;">Home</a></li>
+                <li><a href="..\About\about.html" onclick="window.location=this.href; return false;">About</a></li>
+                <li><a href="..\Services\services.html" onclick="window.location=this.href; return false;">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </div>
+        <a href="#signup" class="cta-btn">Join Now</a>
+        <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </nav>
+
+    <!-- Hero Section -->
+   
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Groove to the Beat with <span class="highlight">GrooveU</span></h1>
+            <p>Join our dance community and master your moves in no time. Beginner to Pro – we have something for everyone!</p>
+            <a href="#signup" class="cta-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About <span class="highlight">GrooveU</span></h2>
+            <p>GrooveU is your one-stop destination for learning dance, no matter your experience level. Whether you're just starting or looking to refine your skills, our expert instructors are here to guide you every step of the way. At GrooveU, we believe in unlocking the potential of every dancer, fostering talent, creativity, and confidence. Our academy, led by visionary owner <span class="highlight">Manan Farooqi</span>, is dedicated to cultivating the dance talent of the new generation. Manan's mission is to inspire young dancers to embrace their passion, push boundaries, and express themselves through movement. Through GrooveU, we aim to build a vibrant community of dancers who not only excel in their craft but also carry the torch for dance in the future. Dive into a variety of dance styles, discover the rhythm that suits you, and become part of a legacy that shapes the future of dance!</p>
+        </div>
+
+        <div class="container-1">
+            <div class="image">
+                <img src="pexels-bianca-gabas-1167224-2467768.jpg" alt="Placeholder Image">
+            </div>
+            <div class="text">
+                <h1>Hip-Hop</h1>
+                <p>
+                    At GrooveU Academy, hip hop dance takes center stage as a dynamic and empowering art form that allows students to express 
+                    themselves through rhythm and movement. Rooted in urban culture, our hip hop classes combine foundational techniques 
+                    with freestyle exploration, enabling dancers to build confidence, creativity, and unique personal styles. Guided by 
+                    experienced instructors, students delve into popular styles like breaking, popping, and locking while learning to connect 
+                    their movements to the beats and energy of hip hop music. GrooveU fosters a supportive and vibrant community where dancers 
+                    of all levels can thrive, embrace their passion for dance, and unleash their full potential on the dance floor.
+                </p>
+                <a href="#signup" class="cta-btn">Start Learning</a>
+            </div>
+        </div>
+
+        <div class="container-1">
+            <div class="text">
+                <h1>Lyrical</h1>
+                <p>
+                    At GrooveU Academy, lyrical dance embodies the perfect blend of grace, emotion, and storytelling through movement. This expressive dance style combines the technical elements of ballet with the fluidity of jazz, allowing dancers to convey deep emotions and connect with the music’s lyrics on a personal level. Our experienced instructors guide students to explore the art of interpreting music through powerful yet elegant movements, fostering creativity and emotional expression. At GrooveU, we provide a nurturing environment where dancers of all skill levels can refine their technique, enhance their musicality, and discover the beauty of storytelling through lyrical dance.
+                </p>
+                <a href="#signup" class="cta-btn">Start Learning</a>
+                
+            </div>
+            <div class="image">
+                <img src="ladd-392.jpg" alt="Placeholder Image">
+            </div>
+        </div>
+
+        <div class="container-1">
+            <div class="image">
+                <img src="pexels-kosyginl-18086368.jpg" alt="Placeholder Image">
+            </div>
+            <div class="text">
+                <h1>Kathak</h1>
+                <p>
+                    At GrooveU Academy, Kathak takes the spotlight as a mesmerizing classical dance form that combines grace, rhythm, and storytelling. Rooted in ancient Indian traditions, Kathak is renowned for its intricate footwork, swift spins, and expressive gestures that bring stories to life through movement. Our expert instructors guide students in mastering the fundamentals of this elegant art, from precise rhythm patterns (tala) to emotive expressions (abhinaya). GrooveU provides a supportive space for dancers to delve into the rich cultural heritage of Kathak, refining their technique and fostering a deeper connection to this timeless tradition. Whether beginners or advanced learners, students will find inspiration and growth in every step of their Kathak journey.
+                </p>
+                <a href="#signup" class="cta-btn">Start Learning</a>
+            </div>
+        </div>
+
+        <div class="container-1">
+            <div class="text">
+                <h1>Robotic</h1>
+                <p>
+                    At GrooveU Academy, robotic dance stands out as a captivating and futuristic style that merges precision, creativity, and rhythm. Inspired by the movements of robots, this dance form emphasizes sharp, mechanical motions, isolations, and popping techniques to create an illusion of artificial life. Our skilled instructors guide students in mastering the art of controlled movements, teaching them to synchronize their dance with electronic beats and dynamic rhythms. Robotic dance at GrooveU is not just about technique—it’s about pushing the boundaries of imagination and storytelling through movement. Whether beginners or advanced dancers, students can explore this unique style and bring their robotic personas to life on stage.
+                </p>
+                <a href="#signup" class="cta-btn">Start Learning</a>
+            </div>
+            <div class="image">
+                <img src="Popping.jpg" alt="Placeholder Image">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our <span class="highlight">Services</span></h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals who bring passion and knowledge to every class.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Flexible Schedules</h3>
+                    <p>Choose a time that fits your busy life and take dance classes at your convenience.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Join a vibrant community of dancers who support and inspire each other every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="signup" class="cta">
+        <div class="container">
+            <h2>Start Dancing Today!</h2>
+            <p>Sign up and begin your dance journey with GrooveU. It’s time to make your move!</p>
+            <div class="signup-container">
+                <h2>Create an Account</h2>
+                <form action="/submit" method="POST" class="signup-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <p class="login-state">Already have an account? <a href="..\Login Page\login.html" class="login-link">Login</a></p>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="logo">
+            <a href="#">
+                <img src="Screenshot 2024-11-06 073214.png" alt="" srcset="">
+            </a>
+        </div>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+            <p>&copy; 2024 GrooveU. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function showsidebar() 
+        {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hidesidebar() 
+        {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
